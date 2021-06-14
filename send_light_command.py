@@ -6,7 +6,7 @@ import requests
 import json
 
 #This auth token is from the webcite, https://cloud.lifx.com/settings
-token = ""
+token = " "
 
 #Headers contain protocol info that appear at the beginning of the raw message that is sent over TCP connection.
 headers = {
