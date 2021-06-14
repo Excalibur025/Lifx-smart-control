@@ -17,10 +17,9 @@ headers = {
 powerstatus = input("on or off: ")
 powerstatus = powerstatus.lower()
 
-#brightness is an int, not a string so convert.
+#brightness and saturation are ints, not a string so convert.
 brightness = int(input("Brightness: "))
-
-#saturation = int(input("Saturation: "))
+saturation = int(input("Saturation: "))
 
 #same thing as above.
 color = input("Color (white, red, orange, yellow, cyan, green, blue, purple, or pink): ")
@@ -38,7 +37,8 @@ color = color.lower()
 payload = {
     "power": powerstatus,
     #"color" : blue saturation:0.5
-    "color" : color + " saturation:0.75",
+    "color" : color,
+    "saturation" : saturation,
     "brightness": brightness,
     "duration": 5,
     #"power": "off",
